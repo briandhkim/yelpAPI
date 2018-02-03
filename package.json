@@ -1,0 +1,29 @@
+{
+  "name": "yelp-api",
+  "version": "1.0.0",
+  "description": "setting up server for yelp api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briandhkim/yelpAPI.git"
+  },
+  "keywords": [
+    "yelp",
+    "fusion",
+    "API",
+    "REST",
+    "client"
+  ],
+  "author": "Brian Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briandhkim/yelpAPI/issues"
+  },
+  "homepage": "https://github.com/briandhkim/yelpAPI#readme",
+  "dependencies": {
+    "yelp-fusion": "^2.0.3"
+  }
+}
