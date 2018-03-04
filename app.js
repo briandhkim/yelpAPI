@@ -29,7 +29,7 @@ app.post('/search', (req,res)=>{
 	client.search(params).then(response=>{
 		res.json(response.jsonBody);
 	}).catch(e=>{
-		let errors = [];
+		var errors = [];
 		if(req.body.term ==undefined) errors.push("enter a valid term");
 		if(req.body.location==undefined) errors.push("enter a valid location");
 		res.json({"Success": false, errors});
