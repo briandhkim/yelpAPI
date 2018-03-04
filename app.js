@@ -22,7 +22,7 @@ app.post('/search', (req,res)=>{
 		res.json({"Success": false, errors: "No API key received"});
 	}
 	const client = yelp.client(req.body.access_token);
-	let params = {
+	var params = {
 		term: req.body.term,
 		location: req.body.location
 	}
