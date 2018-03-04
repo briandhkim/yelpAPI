@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 	<title></title>
+	<script>
+	    $.ajax({
+	      "url": "https://api.yelp.com/oauth2/token",
+	      "method": "POST",
+	      "headers": {
+		"Content-Type": "application/x-www-form-urlencoded"
+	      },
+	      "data": {
+		"grant_type": "client_credentials",
+		"client_id": "LkVX1EK49f7P496cMVqZ7w",
+		"client_secret": "URgEONH1Rav4246IWoBV6veKmtWOvysSnm193jTICOgwnELbxNXRF84oKjfpMxr3"
+	      },
+	      success: function(data){
+		console.log(data);
+	      }
+
+
+	    });
+	  </script>
 </head>
 <body>
 	<h1>you must be lost</h1>
